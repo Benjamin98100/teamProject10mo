@@ -1,0 +1,7 @@
+{
+  "name": "breaking_bad",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
