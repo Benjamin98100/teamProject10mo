@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title >Breaking Bad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="https://www.dafont.com/forum/attach/orig/1/4/149303.jpg"></ion-img>
+  <h3 class="h1-init">Personajes</h3>
+  <ion-list>
+    <ion-item *ngFor="let i of personajes" 
+     [routerLink]="i.redirectTo" detail>
+      <ion-avatar slot="start" >
+        <img [src]="i.src">
+      </ion-avatar>
+      <ion-label>{{i.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title class="cnt">©Job&Benja -- 2022</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
